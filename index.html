@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Polaroid</title>
+    <style>
+      body {
+        overflow: hidden;
+      }
+
+      .wrapper {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+        flex-direction: column;
+        align-content: middle;
+        max-width: 75vw;
+        box-sizing: border-box;
+      }
+
+      .wrapper img {
+        width: 100%;
+        height: auto;
+        filter: blur(2px);
+        transition: all 0.2s ease-out;
+        filter: brightness(1.8) grayscale(100%);
+      }
+
+      .wrapper img:hover {
+        filter: unset;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper" id="wrapper">
+      <div class="img-wrapper">
+        <img src="./polaroids/1.jpg" alt="1" />
+      </div>
+    </div>
+  </body>
+</html>
