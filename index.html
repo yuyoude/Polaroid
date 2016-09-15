@@ -5,7 +5,7 @@
     <title>Polaroid</title>
     <style>
       body {
-        overflow: hidden;
+        background-color: #fff;
       }
 
       .wrapper {
@@ -21,15 +21,20 @@
       }
 
       .wrapper img {
-        width: 100%;
-        height: auto;
-        filter: blur(2px);
-        transition: all 0.2s ease-out;
-        filter: brightness(1.8) grayscale(100%);
+        height: 75vh;
+        width: auto;
+        transition: all 0.4s ease-out;
+        filter: hue-rotate(-12deg);
+        margin: auto;
+        cursor: crosshair;
       }
 
       .wrapper img:hover {
         filter: unset;
+      }
+
+      .img-wrapper {
+        display: flex;
       }
     </style>
   </head>
